@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-adexchangebuyer2_v2_beta1-cli"; vers = "1.0.12+20190701"; cksum = "bb77f9a47f1ca0e4dd0552ed4f9dbaab34e1576fb4f74c94f78ad838965da5a3";}

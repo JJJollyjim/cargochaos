@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "markdown-renderer-that-you-probably-shouldnt-use"; vers = "0.1.0"; cksum = "0e449384ea1c760cf4357941046496e24f5d1c3a9136fb25d18127945ef44af3";}

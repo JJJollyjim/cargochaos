@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-accesscontextmanager1_beta-cli"; vers = "1.0.13+20200405"; cksum = "90f1a743fd454b1bfad54c7427b62d58f6994e4b28eefa42ab2c8cc6a31f8cd7";}

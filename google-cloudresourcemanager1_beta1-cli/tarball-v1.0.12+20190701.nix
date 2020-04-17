@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-cloudresourcemanager1_beta1-cli"; vers = "1.0.12+20190701"; cksum = "a72c5c30cf3f20224518e279b4390ea638008625bcbbbd43542d1c450f625751";}

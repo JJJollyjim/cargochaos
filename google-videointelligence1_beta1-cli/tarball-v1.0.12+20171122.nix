@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-videointelligence1_beta1-cli"; vers = "1.0.12+20171122"; cksum = "4794319779aa3c9db290732f57cd525e52b8c1428c9e1d069aed3ee40846776f";}

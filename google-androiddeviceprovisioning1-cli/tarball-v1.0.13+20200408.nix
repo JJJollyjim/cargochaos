@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-androiddeviceprovisioning1-cli"; vers = "1.0.13+20200408"; cksum = "546e8e5cb4520e53949254709db8c4b83a99df3613d304b168bbb219c47f4a1d";}

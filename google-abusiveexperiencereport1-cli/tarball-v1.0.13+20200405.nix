@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-abusiveexperiencereport1-cli"; vers = "1.0.13+20200405"; cksum = "62328324afd95c5de72e7b681804640f60258bdbfaf4fb984e1d7c6983e61404";}

@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-commentanalyzer1_alpha1-cli"; vers = "1.0.12+20190616"; cksum = "288301fe5425ce77a557621bf18ce37bd96d7792457277d99be2d7617d224bf8";}

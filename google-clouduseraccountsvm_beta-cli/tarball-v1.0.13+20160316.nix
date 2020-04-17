@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-clouduseraccountsvm_beta-cli"; vers = "1.0.13+20160316"; cksum = "b2e6fdfbb02f4e6b8461a61318ae534efb772897201a55fdb0bc2a68dd80431d";}

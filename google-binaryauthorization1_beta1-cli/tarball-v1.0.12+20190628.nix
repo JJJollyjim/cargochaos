@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-binaryauthorization1_beta1-cli"; vers = "1.0.12+20190628"; cksum = "2dbeab29b375f7fa072a0ef75635010e75366401a8d59218c745d45450501b17";}

@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-replicapoolupdater1_beta1-cli"; vers = "1.0.13+20161003"; cksum = "08a51999c9f025eb3da498aaa1aaac193279c9088b6b8e278fbb4d6d130c40a8";}

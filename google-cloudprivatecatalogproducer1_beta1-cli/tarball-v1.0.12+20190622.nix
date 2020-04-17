@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-cloudprivatecatalogproducer1_beta1-cli"; vers = "1.0.12+20190622"; cksum = "cb9972beed8baa098b644a16f7eef3287ac10ce5b52010615ab4d88e3b4dbd46";}

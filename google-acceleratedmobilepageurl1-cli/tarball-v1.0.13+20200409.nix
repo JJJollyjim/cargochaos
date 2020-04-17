@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-acceleratedmobilepageurl1-cli"; vers = "1.0.13+20200409"; cksum = "197cc06141c558bd85e7dfa48f6b249005f79c0f065540590c0c77b26740a12b";}

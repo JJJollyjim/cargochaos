@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-clouderrorreporting1_beta1-cli"; vers = "1.0.13+20200331"; cksum = "a94611ca41e6008a9faa94ca49887847705a102746b05eca7f810d2b2d5b43fc";}

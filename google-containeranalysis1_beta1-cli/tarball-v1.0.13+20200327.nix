@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-containeranalysis1_beta1-cli"; vers = "1.0.13+20200327"; cksum = "3a7258f07bdb936dee4dc602b491317e5949067853d0cda69b3b9a39ca854220";}

@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-gamesmanagement1_management-cli"; vers = "1.0.13+20200402"; cksum = "673a3a173945abe8ab7d31c4503beda89d5064502053584df00a3983fc43658c";}

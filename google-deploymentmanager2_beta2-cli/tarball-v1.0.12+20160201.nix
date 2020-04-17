@@ -1,0 +1,1 @@
+{pkgs, ...}: pkgs.callPackage ../fetchCrateBall.nix {name = "google-deploymentmanager2_beta2-cli"; vers = "1.0.12+20160201"; cksum = "ca4efdab113677324ed2b6fab76db9f3eca31591a3db30fce7b07370ece503ce";}
