@@ -8,4 +8,8 @@ with pkgs;
   fuse = _: {
     buildInputs = [ pkgconfig fuse ];
   };
+
+  libslirp-sys = _: {
+    buildInputs = [ pkgconfig libslirp ];
+  };
 }
