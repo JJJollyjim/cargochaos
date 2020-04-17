@@ -12,4 +12,8 @@ with pkgs;
   libslirp-sys = _: {
     buildInputs = [ pkgconfig libslirp ];
   };
+
+  libudev-sys = _: {
+    buildInputs = [ pkgconfig libudev ];
+  };
 }
