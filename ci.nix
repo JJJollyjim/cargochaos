@@ -1,4 +1,12 @@
-let pkgs = import (import ./nix/sources.nix).nixpkgs {};
+let
+  pkgs = import (import ./nix/sources.nix).nixpkgs {};
 in
-pkgs.lib.mapAttrs (_: pkg: (pkg {pkgs = pkgs; nixpkgs = null; release = false;}).rootCrate.build) 
-(pkgs.lib.filterAttrs (_: c: let tree = (c {pkgs = pkgs; nixpkgs = null; release = false;}).rootCrate.debug.internal.buildTree; in (builtins.hasAttr "crateBin" tree && tree.crateBin != [])) (import ./default.nix))
+builtins.mapAttrs
+  (_: pkg:
+    let
+      rc = (pkg { pkgs = pkgs; nixpkgs = null; release = false; }).rootCrate;
+      tree = rc.debug.internal.buildTree;
+    in
+      if (builtins.hasAttr "crateBin" tree) then rc.build else null
+  )
+  (import ./default.nix)
