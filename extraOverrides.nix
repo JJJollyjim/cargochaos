@@ -28,4 +28,8 @@ with pkgs;
   magick_rust = _: {
     buildInputs = [ pkgconfig imagemagick7 ];
   };
+
+  milter-sys = _: {
+    buildInputs = [ pkgconfig libmilter ];
+  };
 }
