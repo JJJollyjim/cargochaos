@@ -20,4 +20,8 @@ with pkgs;
   libsodium-sys = _: {
     buildInputs = [ pkgconfig libsodium ];
   };
+
+  libusb-sys = _: {
+    buildInputs = [ pkgconfig libusb1 ];
+  };
 }
