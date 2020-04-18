@@ -32,4 +32,8 @@ with pkgs;
   milter-sys = _: {
     buildInputs = [ pkgconfig libmilter ];
   };
+
+  nettle-sys = _: {
+    buildInputs = [ pkgconfig nettle ];
+  };
 }
