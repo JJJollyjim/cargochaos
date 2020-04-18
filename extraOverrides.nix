@@ -24,4 +24,8 @@ with pkgs;
   libusb-sys = _: {
     buildInputs = [ pkgconfig libusb1 ];
   };
+
+  magick_rust = _: {
+    buildInputs = [ pkgconfig imagemagick7 ];
+  };
 }
