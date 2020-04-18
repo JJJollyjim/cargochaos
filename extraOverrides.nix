@@ -36,4 +36,8 @@ with pkgs;
   nettle-sys = _: {
     buildInputs = [ pkgconfig nettle ];
   };
+
+  opencc-rust = _: {
+    buildInputs = [ pkgconfig opencc ];
+  };
 }
