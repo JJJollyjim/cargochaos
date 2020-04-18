@@ -40,4 +40,8 @@ with pkgs;
   opencc-rust = _: {
     buildInputs = [ pkgconfig opencc ];
   };
+
+  unwind-sys = _: {
+    buildInputs = [ pkgconfig libunwind ];
+  };
 }
