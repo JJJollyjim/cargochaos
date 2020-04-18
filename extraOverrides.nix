@@ -44,4 +44,10 @@ with pkgs;
   unwind-sys = _: {
     buildInputs = [ pkgconfig libunwind ];
   };
+
+  xkbcommon-sys = _: {
+    buildInputs = [ pkgconfig libxkbcommon ];
+  };
+
+  # TODO tectonic
 }
