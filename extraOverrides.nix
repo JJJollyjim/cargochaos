@@ -10,7 +10,7 @@ with pkgs;
   };
 
   libslirp-sys = _: {
-    buildInputs = [ pkgconfig libslirp ];
+    buildInputs = [ pkgconfig libslirp gnome2.glib ];
   };
 
   libudev-sys = _: {
