@@ -16,4 +16,8 @@ with pkgs;
   libudev-sys = _: {
     buildInputs = [ pkgconfig libudev ];
   };
+
+  libsodium-sys = _: {
+    buildInputs = [ pkgconfig libsodium ];
+  };
 }
