@@ -1,5 +1,15 @@
 let
-  pkgs = import (import ./nix/sources.nix).nixpkgs {};
+  sources = import ./nix/sources.nix;
+  mozOverlay = import (sources.nixpkgs-mozilla);
+  pkgs = import sources.nixpkgs {
+    overlays = [ 
+      mozOverlay
+      (super: _: {
+        rustc = super.latest.rustChannels.nightly.rust;
+        inherit (super.latest.rustChannels.nightly) cargo rust rust-fmt rust-std clippy; 
+      })
+    ];
+  };
   allOverrides = pkgs.defaultCrateOverrides // (pkgs.callPackage ./extraOverrides.nix {});
 in
 builtins.mapAttrs
